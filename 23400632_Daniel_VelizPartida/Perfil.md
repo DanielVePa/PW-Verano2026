@@ -2,9 +2,10 @@
 
 Hola me llamo Daniel Veliz
 Estudio ingenieria en sistemas computacionales
+En el instituto tecnologico de tepic
 
 Temas que me interesan
-Intenligencia artificial
+Inteligencia artificial
 Bases de datos 
 
 Tecnologias que manejo
