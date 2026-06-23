@@ -50,31 +50,41 @@
   - este se puede utilizar para cuando ya vinculaste el repositorio local con el remoto para verificar que este configurado correctamente
 
 # 10. git remote rm <name/origin>
-sirve para remover un repositorio
+  - sirve para remover un repositorio
+  - este sirve para casos en los que te equivocaste al vincular un repositorio local a uno remoto y quieres eliminarlo para configurarlo correctamente
+  - ejemplo: git remote rm origin
 
 # 11. git remote show origin
-muestra los branches remotos
+  - muestra los branches remotos
+  - este lo pueden usar para verificar los datos detallados de un repositorios y asi ver que todo esta en orden
 
 # 12. git branch <Name>
-sirve para crear un branch
+  - sirve para crear un branch
+  - esto se utiliza cuando se quiere desarrollar una nueva funcionalidad sin que afecte el codigo estable 
 
 # 13. git branch
-sirve para ver la lista de los branches 
+  - sirve para ver la lista de los branches
+  - se utiliza para confirmar que el branch se creo correctamente en el comando anterior
 
 # 14. git branch -d <Name>
-comando -d que elimina el branch y lo une al master
+  - comando -d que elimina el branch y lo une al master
+  - suponiendo que ya se creo el branch login y ya se trabajo y ya no se necesita se puede eliminar para que no ocupe espacio
+  - ejemplo: git branch -d login
 
 # 15. git branch -D <Name>
-Elimina sin preguntar
+  - Elimina sin preguntar
+  - hay casos en lo que el anterior comando no permite eliminar el branch por lo que este lo elimina definitivamente sin pedir nada mas
 
 # 16. git tag
-muestra una lista de todos los tags
+  - muestra una lista de todos los tags
+  - por ejemplo es bastante comun que se utilicen las etiquetas para separar versiones: v1,v2,v3...
 
 # 17. git status
-lista un estado actual del repositorio con la lista de archivos modificados o agregados
+  - lista un estado actual del repositorio con la lista de archivos modificados o agregados
+  - se suele usar para ver cuales archivos estan listos para subirse con el commit y cuales 
 
 # 18. git pull origin <nameBranch>
-busca los cambios nuevos y actualiza el repositorio
+  - busca los cambios nuevos y actualiza el repositorio
 
 # 19. git fetch
 verifica los cambios en el repositorio online con el local
