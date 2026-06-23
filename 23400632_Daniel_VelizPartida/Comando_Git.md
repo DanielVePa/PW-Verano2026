@@ -37,12 +37,17 @@
 
 # 7. git reset HEAD <nombre archivo>
   - sirve para sacar un archivo del commit
+  - por ejemplo si subiste un archivo a commit que no deberias puedes quitarlo del commit con el siguiente comando de ejemplo:
+  - git reset HEAD config.txt
 
 # 8. git remote add origin <url>
-sirve para agregar un repositorio remoto
+  - sirve para agregar un repositorio remoto
+  - cuando ya se tiene un proyecto con archivos puedes enlazarlo tu repositorio local a un repositorio remoto para que tus compañeros puedan acceder a el
+  - ejemplo: git remote add origin https://github.com/usuario/MiProyecto.git
 
 # 9. git remote -v
-muestra la lista de los repositorios
+  - muestra la lista de los repositorios
+  - este se puede utilizar para cuando ya vinculaste el repositorio local con el remoto para verificar que este configurado correctamente
 
 # 10. git remote rm <name/origin>
 sirve para remover un repositorio
