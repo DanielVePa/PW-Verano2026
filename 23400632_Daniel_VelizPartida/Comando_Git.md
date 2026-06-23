@@ -85,9 +85,13 @@
 
 # 18. git pull origin <nameBranch>
   - busca los cambios nuevos y actualiza el repositorio
+  - suponiendo que varias personas estan trabajando en un mismo repositorio y una persona sube cambios se usa para que tu puedas ver los cambios ya puestos
+  - ejemplo: git pull origin main
 
 # 19. git fetch
-verifica los cambios en el repositorio online con el local
+  - verifica los cambios en el repositorio online con el local
+  - este suele utilizarse cuando quieres ver si alguien ha subidos nuevas actualizaciones pero sin integrarlas todavia
 
 # 20. git rm <archivo>
-sirve para borrar un archivo del repositorio
+  - sirve para borrar un archivo del repositorio
+  - suele usarse cuando quieres eliminar un archivo del repositorio ademas de agregarlo al commit ya sea porque no se necesite o se haya creado por error
