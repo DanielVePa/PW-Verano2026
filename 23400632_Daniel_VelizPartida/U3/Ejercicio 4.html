@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset='UTF-8'>
+        <style>
+              body {
+                    background: #eef0f5;
+                    font-family: Helvetica, Arial, sans-serif;
+                    margin-top: 50px;
+                    padding: 60px 20px;
+                }
+                main {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 60px;
+                    max-width: 900px;
+                    margin: auto;
+                }
+                section {
+                    max-width: 400px;
+                }
+                h1 { color: #1877F2; font-size: 50px; margin: 0; }
+                
+                form {
+                    background: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+                    width: 300px;
+                    text-align: center;
+                }
+                input { width: 90%; padding: 12px; margin: 8px 0; }
+                aside {
+                    text-align: center;
+                    font-size: 14px;
+                    width: 300px;
+                    margin-top: 12px;
+                }
+                
+                @media (max-width: 700px) {
+                    main { flex-direction: column; text-align: center; }
+                }
+                a{
+                    text-decoration: none;
+                }
+                form{
+                    width:100%;
+                }
+
+                form input[Type="submit"][value="Iniciar sesion"]{
+                    font-family: Helvetica, Arial, sans-serif;
+                    background-color: blue;
+                    color:white;
+                    border-radius: 5px;
+                    border-width: 0;
+                    width: 100%;
+                }
+                form input[type="submit"][value="Crear cuenta nueva"]{
+                    background-color:#42b72a;
+                    color:white;
+                    white-space: nowrap;
+                    padding:12px 20px;
+                    border-width: 0;
+                    border-radius: 5px;
+                    width:auto;
+                    max-width: 100%;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 40%;
+                }
+                a{
+                    max-width: 100%;
+                }
+        </style>
+        </head>
+        <body>
+
+        <main>
+        <section>
+            <h1>facebook</h1>
+            <p>Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
+        </section>
+        <div>
+        <form>
+            <input type="text" placeholder="Correo electronico o numero de telefono"><br>
+            <input type="password" placeholder="Contraseña"><br>
+            <input type="submit" value="Iniciar sesion"><br>
+            <a href="#">Olvidaste tu contraseña?</a>
+            <hr>
+            <input type="submit" value="Crear cuenta nueva">
+        </form>
+            <h6><Strong>Crea una página</Strong> para una celebridad, una marca o un negocio</h6>
+        </div>
+        </main>
+
+        </body>
+</html>
