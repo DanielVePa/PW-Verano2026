@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>X</title>
+        <style>
+            header{
+                background-color: black;
+                padding-top: 100px;
+                padding-right: px;
+                display: flex;
+            }
+            header img{
+                width: 750px;
+                height: auto;
+            }
+            body{
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            h1{
+                color: white;
+                font-family: "Segoe UI", Arial, sans-serif;
+            }
+            h3{
+                color:white;
+                font-family: "Segoe UI", Arial, sans-serif;
+            }
+            #o{
+                color:white;
+                padding-left: 150px;
+                font-family: "Segoe UI", Arial, sans-serif;
+            }
+            form{
+                padding-top: 30px;
+            }
+            input[type="submit"][value="Registrarse con google"]{
+                background-color: white;
+                padding: 5px;
+                width: 70%;
+                border-width: 0;
+                font-family: "Segoe UI", Arial, sans-serif;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg");
+                background-repeat: no-repeat;
+                background-position: 70px center;
+                background-size: 20px 20px;
+                padding-left: 35px;
+            }
+            input[type="submit"][value="Registrarse con apple"]{
+                background-color: white;
+                padding: 5px;
+                width: 70%;
+                border-width: 0;
+                font-family: "Segoe UI", Arial, sans-serif;
+                border-radius: 10px;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg");
+                background-repeat: no-repeat;
+                background-position: 70px center;
+                background-size: 20px 20px;
+                padding-left: 35px;
+            }
+            input[type="submit"][value="Crear cuenta"]{
+                background-color: rgb(49, 49, 255);
+                color:white;
+                padding: 5px;
+                border-radius: 10px;
+                border-width: 0;
+                width:70%;
+                font-family: "Segoe UI", Arial, sans-serif;
+            }
+            h6{
+                color:rgb(134, 134, 134);
+                font-family: "Segoe UI", Arial, sans-serif;
+                width: 70%;
+            }
+            #cuenta{
+                font-family: "Segoe UI", Arial, sans-serif;
+                color:white;
+            }
+            input[type="submit"][value="Iniciar sesión"]{
+                background-color: black;
+                color:rgb(99, 99, 255);
+                width: 70%;
+                padding: 7px;
+                border-color: white;
+                border-width: 0.2;
+                border-radius: 15px;
+                font-family: "Segoe UI", Arial, sans-serif;
+            }
+            .contenido{
+                display:flex;
+                flex:1;
+            }
+            footer{
+                color:white;
+                text-align: center;
+                padding: 20px;
+            }
+            footer a{
+                color:rgb(120, 120, 120);
+                font-family: "Segoe UI", Arial, sans-serif;
+                text-decoration: none;
+                font-size: 11.7px;
+            }
+            form a{
+                text-decoration: none;
+                color:rgb(66, 66, 255);
+            }
+            @media (max-width: 768px){
+                .contenido{
+                    flex-direction:column;
+                    align-items: center;
+                    text-align: center;
+                }
+                header{
+                    padding-top: 40px;
+                    padding-right: 0;
+                    justify-content: center;
+                }
+                header img{
+                    width: 150px;
+                    height: auto;
+                    align-items: right;
+                }
+                h1,h3,h6,#cuenta{
+                    text-align: center;
+                }
+                #o{
+                    padding-left: 0;
+                    text-align: center;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                }
+                footer{
+                    font-size: 12px;
+                    padding: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenido">
+        <header>
+            <img src="https://cdn.mos.cms.futurecdn.net/UGgpztkM2XFNUcBEcqeG9n.jpg">
+        </header>
+        <main>
+            <form>
+                <h1>Lo que está <br>pasando ahora</h1>
+                <h3>Únete hoy</h3>
+                <input type="submit" value="Registrarse con google">
+                <input type="submit" value="Registrarse con apple">
+                <h5 id="o">o</h5>
+                <input type="submit" value="Crear cuenta">
+                <h6>Al registrarse, aceptas los <a href="">Terminos de servicio</a> y la <a href="">Politica de privacidad</a>, incluida la politica de Uso de cookies</h6>
+                <br>
+                <h5 id="cuenta">¿Ya tienes una cuenta?</h5>
+                <input type="submit" value="Iniciar sesión">
+            </form>
+        </main>
+        </div>
+        <footer>
+            <a href="">Informacion |</a>
+            <a href="">Descarga la app de X |</a>
+            <a href="">Grok |</a>
+            <a href="">Centro de ayuda |</a>
+            <a href="">Condiciones de servicio |</a>
+            <a href="">Politica de privacidad |</a>
+            <a href="">Politica de cookies |</a>
+            <a href="">Accesibilidad |</a>
+            <a href="">Información de anuncios |</a>
+            <a href="">Blog |</a>
+            <a href="">Empleos |</a>
+            <a href="">Recursos para marcas |</a>
+            <a href="">Publicidad |</a>
+            <a href="">Marketing |</a>
+            <a href="">X para empresas |</a>
+            <a href="">Desarrolladores |</a>
+            <a href="">Guía |</a>
+            <a href="">Configuración |</a>
+            <a href="">2025 X Crop.</a>
+        </footer>
+    </body>
+</html>
