@@ -3,6 +3,106 @@
     <head>
         <meta charset="UTF-8">
         <title>Estructura base</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background: white;
+                color: black;
+                margin: 0;
+                padding: 20px;
+            }
+
+            div, form, table{
+                background: white;
+                padding: 15px;
+                margin: 20px;
+            }
+
+            h1,h2,h3,h4,h5,h6 {
+                color: rgb(23,123,144)
+
+            }
+
+            img{
+                width:300px;
+                border-radius: 10px;
+                display: block;
+                margin: auto;
+            }
+
+            ul,ol{
+                padding-left: 30px;
+            }
+
+            table{
+                width:100%;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            th{
+                background:rgb(0, 123, 66);
+                color:white;
+                padding: 10px;
+            }
+
+            td{
+                padding: 10px;
+            }
+
+            a{
+                color:rgb(0, 166, 147);
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
+                color: blue;
+            }
+
+            fieldset{
+                border: 2px solid blue;
+                border-radius: 10px;
+            }
+
+            legend{
+                font-weight: bold;
+                padding: 10px;
+                color: blue;
+            }
+
+            label{
+                font-weight: bold;
+            }
+
+            input,select,textarea{
+                margin-top: 5px;
+                padding:8px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+
+            .boton{
+                background: blue;
+                color:white;
+                border: none;
+                cursor: pointer;
+            }
+
+            input[type="submit"],input[type="reset"]{
+                background: blue;
+                color:white;
+                border: none;
+                cursor: pointer;
+            }
+            input[type="reset"]{
+                background: gray;
+                color:white;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
         <div>
@@ -62,7 +162,7 @@
             <h3>Formularios</h3>
                 <from>
                     <fieldset>
-                        <legend>Ejemplo de formulario</legend>
+                        <legend>Articulo</legend>
                         <label>Texto</label>
                         <input type="text">
                         <br></br>
@@ -109,7 +209,10 @@
                             <label>Archivo</label>
                             <input type="file">
                             <br></br>
+                            <!-- Botones -->
                             <input type="submit">
+                            <br></br>
+                            <input type="reset">
                     </fieldset>
                 </from>
             <hr>

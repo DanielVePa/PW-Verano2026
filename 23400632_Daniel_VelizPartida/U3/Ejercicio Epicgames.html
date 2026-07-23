@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+        <style>
+            html,body{
+                background-color: black;
+                margin:0px;
+            }
+            .icon-btn{
+                background-color: black;
+                border:0px;
+            }
+            .icon-btn img{
+                width: 22px;
+                height: 22px;
+            }
+            .Store{
+                background-color: rgb(13, 13, 13);
+                color: white;
+                border: 0px;
+            }
+            .Asist{
+                background-color: rgb(13, 13, 13);
+                color: white;
+                border: 0px;
+            }
+            .Distri{
+                background-color: rgb(13, 13, 13);
+                color: white;
+                border: 0px;
+            }
+            .circulo{
+                border:0px;
+                background-color: rgb(13, 13, 13);
+
+            }
+            .circulo img{
+                width: 30px;
+                height: 20px;
+            }
+            .iniciarsesion{
+                background-color: rgb(88, 88, 88);
+                color:white;
+                border: 0px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .Desc{
+                background-color: rgb(0, 157, 255);
+                border:0px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 10px;
+                background-color: rgb(13, 13, 13);
+            }
+            .nav-der{
+                display: flex;
+                gap: 10px;
+            }
+            .nav-izq{
+                display: flex;
+                align-items: center;
+                gap:30px;
+            }
+            .cuerpo{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 10px;
+                background-color: black;
+            }
+            .botones-izq{
+                padding-top: 25px;
+                padding-left: 100px;
+            }
+            .botones-der{
+                padding-top: 25px;
+                padding-right: 100px;
+            }
+            .buscar{
+                background-color: rgb(88, 88, 88);
+                color: white;
+                border-radius: 10px;
+                border:0px;
+                padding: 5px;
+            }.descu{
+                background-color: black;
+                color:white;
+                border:0px;
+            }
+            .explo{
+                background-color: black;
+                color:white;
+                border:0px;
+            }
+            .Noti{
+                background-color: black;
+                color:white;
+                border:0px;
+            }
+            .deseos{
+                background-color: black;
+                color:white;
+                border:0px;
+            }
+            .regalos{
+                background-color: black;
+                color:white;
+                border:0px;
+            }
+            .compras{
+                background-color: black;
+                color:white;
+                border:0px;
+            }
+            .juegos{
+                background-color: black;
+                display: flex;
+                gap:30px;
+            }
+            .juego-prin{
+                padding-left: 110px;
+            }
+            .juego-prin img{
+                width: 750px;
+                border-radius: 10px;
+            }
+            .juegos-secu{
+                display: flex;
+                flex-direction: column;
+                gap:10px
+            }
+            .juegos-secu img{
+                width: 75px;
+                height: 75px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .AC{
+                border:0px;
+                background-color: black;
+                display:flex;
+                gap:10px;
+            }
+            .Light{
+                border:0px;
+                background-color: black;
+                display:flex;
+                gap:10px;
+            }
+            .Warframe{
+                border:0px;
+                background-color: black;
+                display:flex;
+                gap:10px;
+            }
+            .atlas{
+                border:0px;
+                background-color: black;
+                display:flex;
+                gap:10px;
+            }
+            .RF{
+                border:0px;
+                background-color: black;
+                display:flex;
+                gap:10px;
+            }
+            h6{
+                color:white;
+            }
+            .flechas{
+                padding-top: 40px;
+                padding-left: 1000px;
+            }
+            .izq,.der{
+                background-color: rgb(88, 88, 88);
+                color:white;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border:0px
+            }
+            .juegos2{
+                padding-top: 30px;
+                padding-left: 110px;
+                display: flex;
+                gap:40px;
+                padding-bottom: 60px;
+            }
+            .juegos img{
+                border-radius: 10px;
+                position: relative;
+
+            }
+            .imagen-ver{
+                position: relative;
+                display: inline;
+                border-radius: 10px;
+            }
+            .imagen-ver img{
+                border-radius: 10px;
+                width: 360px;
+                height: 36s0px;
+            }
+            .ver-mas{
+                position: absolute;
+                cursor:pointer;
+                top:75%;
+                left:50%;
+                border:0px;
+                transform: translate(-50%,-50%);
+                padding: 15px 25px;
+                border-radius:10px;
+            }
+            .precios img{
+                width: 80px;
+                height: 80px;
+                border-radius: 10px;
+            }
+            .precios{
+                padding-top: 15px;
+                display: flex;
+                flex-direction: column;
+                gap:15px;
+            }
+            .teller{
+                background-color: black;
+                border:0px;
+                display: flex;
+            }
+            .teller-info{
+                padding-left:10px;
+                display: flex;
+                flex-direction: column;
+            }
+            .teller-info h6{
+                margin:0px;
+                font-size: 15px;
+            }
+            .teller-info h6:first-child{
+                padding-top: 15px;  
+            }
+            .void{
+                background-color: black;
+                border:0px;
+                display: flex;
+            }
+            .void-info{
+                padding-left:10px;
+                display: flex;
+                flex-direction: column;
+            }
+            .void-info h6{
+                margin:0px;
+                font-size: 15px;
+            }
+            .void-info h6:first-child{
+                padding-top: 15px;  
+            }
+            .forgot{
+                background-color: black;
+                border:0px;
+                display: flex;
+            }
+            .forgot-info{
+                display: flex;
+                flex-direction: column;
+            }
+            .forgot-info h6{
+                padding-left: 10px;
+                margin:0px;
+                font-size: 15px;
+            }
+            .forgot-info h6:first-child{
+                padding-top: 15px;
+            }
+            .deer{
+                background-color: black;
+                border: 0px;
+                display: flex;
+            }
+            .deer-info{
+                display: flex;
+                flex-direction: column;
+            }
+            .deer-info h6{
+                margin: 0px;
+                font-size: 15px;
+                padding-left: 10px;
+            }
+            .deer-info h6:first-child{
+                padding-top: 15px;
+            }
+            .solar{
+                background-color: black;
+                border: 0px;
+                display: flex;
+            }
+            .solar-info{
+                display: flex;
+                flex-direction: column;
+            }
+            .solar-info h6{
+                margin: 0px;
+                font-size: 15px;
+                padding-left: 10px;
+            }
+            .solar-info h6:first-child{
+                padding-top: 15px;
+            }
+            .monopoly{
+                background-color: black;
+                border: 0px;
+                display: flex;
+            }
+            .monopoly-info{
+                display: flex;
+                flex-direction: column;
+            }
+            .monopoly-info h6{
+                margin: 0px;
+                font-size: 15px;
+                padding-left: 10px;
+            }
+            .monopoly-info h6:first-child{
+                padding-top: 15px;
+            }
+            .fila1,.fila2,.fila3{
+                padding-top: 10px;
+                display: flex;
+                gap: 20px;
+            }
+            button{
+                transition: background-color 0.2s ease;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            button:hover{
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            button:active{
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            .teller, .void, .forgot, .deer, .solar, .monopoly{
+                width: 220px;
+                height: 80px;
+                align-items: center;
+            }
+            footer{
+                background-color: rgb(50, 50, 50);
+                color: white;
+                padding:20px;
+                margin:0px;
+            }
+            .informacion{
+                display: flex;
+                flex-direction: row;
+                gap: 250px;
+            }
+            .volver{
+                background-color: rgb(88, 88, 88);
+                color: white;
+                border:0px;
+                padding: 10px;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+            .links{
+                display:flex;
+                align-items: center;   
+                gap: 20px;             
+            }
+            .links h6{
+                max-width: 1030px;
+                font-weight: normal;
+            }
+        </style>
+    </head>
+    <body id="inicio">
+        <nav class="navbar">
+            <div class="nav-izq">
+                <button class="icon-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Epic_Games_logo.png" alt="Descripción">
+                </button>
+                <button class="Store">STORE</button>
+                <button class="Asist">Asistencia</button>
+                <button class="Distri">Distribuir</button>
+            </div>
+            <div class="nav-der">
+                <button class="circulo">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmsNU_rYjP-ERQ-XT0Og-8z3cKOj5qK6IjakypAwGsgic1TNQD">
+                </button>
+                <button class="iniciarsesion">Iniciar Sesion</button>
+                <button class="Desc">Descargar</button>
+            </div>
+ 
+        </nav>
+        <div class="cuerpo">
+            <div class="botones-izq">
+                    <input class="buscar" type="text" placeholder="Buscar en la tienda">
+                    <button class="descu">Descubrir</button>
+                    <button class="explo">Explorar</button>
+                    <button class="Noti">Noticias</button>
+            </div>
+            <div class="botones-der">
+                <button class="deseos">Lista de deseos</button>
+                <button class="regalos">Regalos</button>
+                <button class="compras">Carrito</button>
+            </div>
+        </div>
+        <div class="juegos">
+            <div class="juego-prin">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBEsLIt9xlqycJajER75CqTtQD6E-pw86I_Kdr49QrKw&s=10">
+            </div>
+            <div class="juegos-secu">
+                <button class="AC">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXsbPGxMqVkIbeuyxQm6F-RdvI8dQnXEG04zHMsYLrkA&s=10">
+                    <h6>AC: Black Flag Resygned</h6>
+                </button>
+                <button class="Light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYXP6uhLeNkfo98OBcvlvXBYpiPo6c9lI8NsU0jKOrTqf6X2-g-RGENE&s=10">
+                    <h6>007 First Light</h6>
+                </button>
+                <button class="Warframe">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBEsLIt9xlqycJajER75CqTtQD6E-pw86I_Kdr49QrKw&s=10">
+                    <h6>Warframe</h6>
+                </button>
+                <button class="atlas">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3eqPPHCq0VRK2rlYRReq4pDX0jg8FwRvOelRftC8A_w&s">
+                    <h6>gen ATLAS</h6>
+                </button>
+                <button class="RF">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwAb0hxSC62NSYxwCi7naQrgQo1Rw0kM3oq0tsu59HvQ&s=10">
+                    <h6>RF ONLINE NEXT</h6>
+                </button>
+            </div>
+        </div>
+        <div class="flechas">
+            <button class="izq"><</button>
+            <button class="der">></button>
+        </div>
+        <div class="juegos2">
+            <div class="imagen-ver">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafZkxIPsLeqBWfsRMty0647Q0qwQwE6fLY-mvuuxUfQ&s=10">
+                <button class="ver-mas">Ver más</button>
+            </div>
+            <div class="precios">
+                <div class="fila1">
+                <button class="teller">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ro8ilPKWmA7PN4UMB04DuDr2PLxvAv4XEDZb7nJbFg&s=10">
+                    <div class="teller-info">
+                        <h6>Teller´s Duty</h6>
+                        <h6>107,99 MXN</h6>
+                    </div>
+                </button>
+                <button class="void">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpr2SjDpqi8_57_kyf5mZPic0Myt_n3vFe7-mxoF-8HA&s">
+                    <div class="void-info">
+                        <h6>Voidling Bound</h6>
+                        <h6>222,99 MXN</h6>
+                    </div>
+                </button>
+                </div>
+                <div class="fila2">
+                    <button class="forgot">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKyzIKFMg5x5G-nxkwddYpD6cvKWXP2NPTbcaOQ9ag9g&s=10">
+                        <div class="forgot-info">
+                            <h6>Forgotlings</h6>
+                            <h6>124,99 MXN</h6>
+                        </div>
+                    </button>
+                    <button class="deer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKate3oivnzOOfQuSthodq-GH6o-ze7E7M63N3_Currg&s=10">
+                        <div class="deer-info">
+                            <h6>Deer & Boy</h6>
+                            <h6>140 MXN</h6>
+                        </div>
+                    </button>
+                </div>
+                <div class="fila3">
+                    <button class="solar">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5AVkw4szJCXZKT_4ihZ487ZDU2wqLcwc1deK4Dl6O2g&s=10">
+                        <div class="solar-info">
+                            <h6>Solarpunk</h6>
+                            <h6>298,99 MXN</h6>
+                        </div>
+                    </button>
+                    <button class="monopoly">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZVUDnyJzyGJijI0KOsifYXn2LpWOtsBSSRewKO33gEg&s=10">
+                        <div class="monopoly-info">
+                            <h6>Monopoly</h6>
+                            <h6>599 MXN</h6>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <h1>STORE</h1>
+        <hr>
+        <div class="informacion">
+        <div class="texto-juegos">
+            <h2>Juegos</h2>
+            <h6>Fortnite</h6>
+            <h6>Fall guys</h6>
+            <h6>Rocket League</h6>
+            <h6>Unreal Tournament</h6>
+            <h6>Infinity Blade</h6>
+            <h6>Shadow Complex</h6>
+            <h6>Robo Recall</h6>
+        </div>
+        <div class="texto-market">
+            <h2>Marketplaces</h2>
+            <h6>Epic Games Store</h6>
+            <h6>Fab</h6>
+            <h6>Quixel Megascans en Fab</h6>
+            <h6>Quixel Megasplants en Fab</h6>
+            <h6>Sketchfab</h6>
+            <h6>ArtStation</h6>
+            <h6>Politica de reembolso de la tienda</h6>
+        </div>
+        <div class="texto-Herramientas">
+            <h2>Herramientas</h2>
+            <h6>Unreal Engine</h6>
+            <h6>UEFN</h6>
+            <h6>MetaHuman</h6>
+            <h6>Twinmotion</h6>
+            <h6>RealityScan</h6>
+            <h6>RAD Game Tolls</h6>
+        </div>
+        </div>
+        <hr>
+        <div class="links">
+            <h6>© 2026 Epic Games, Inc. Todos los derechos reservados. Epic, Epic Games, 
+                el logotipo de Epic Games, Fortnite, el logotipo de Fortnite, Unreal, Unreal Engine, 
+                el logotipo de Unreal Engine, Unreal Tournament y el logotipo de Unreal Tournament 
+                son marcas comerciales o marcas registradas de Epic Games, Inc. tanto en Estados 
+                Unidos de América como en el resto del mundo. Otras marcas o nombres de productos 
+                son marcas comerciales de sus respectivos propietarios. Nuestros sitios web pueden 
+                incluir enlaces a otros sitios y recursos ofrecidos por terceros. Estos enlaces solo 
+                se ofrecen para tu mayor comodidad. Epic Games no tiene control sobre el contenido 
+                de esos sitios y recursos, y no acepta ninguna responsabilidad por ellos ni por 
+                cualquier pérdida o daño que pueda ocasionar el uso que haces de ellos.</h6>
+            <a class="volver" href="#inicio">Volver al inicio</a>
+        </div>
+    </footer>
+</html>

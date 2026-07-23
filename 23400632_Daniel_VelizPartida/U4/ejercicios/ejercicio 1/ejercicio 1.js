@@ -20,8 +20,8 @@ function ejercicio_2(){
     console.log("ejercicio 2")
     let n1;
     while(n1!=0){
-    n1=Math.floor(Math.random()*6)
-    console.log(n1);
+        n1=Math.floor(Math.random()*6)
+        console.log(n1);
     }
 }
 ejercicio_2();
